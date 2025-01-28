@@ -88,6 +88,6 @@ test.describe("Amazon test", () => {
       const productTitle = await watchPage.getProductTitle();
       expect(productTitle).toContain("Starlight");
     });
-    console.log(`Amazon search test has been successfully executed`);
+    console.log(`Amazon Product search test has been successfully executed`);
   });
 });
