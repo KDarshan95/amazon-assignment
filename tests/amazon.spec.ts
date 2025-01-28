@@ -5,7 +5,6 @@ import { SearchedProductPage } from "../pages/searchedProductPage";
 import { ProductPage } from "../pages/productPage";
 import { SellerPage } from "../pages/sellerPage";
 import { WatchPage } from "../pages/watchPage";
-import { watch } from "fs";
 
 test.describe("Amazon test", () => {
   let browser: Browser;

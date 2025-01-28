@@ -1,6 +1,4 @@
 import { Locator, Page } from "@playwright/test";
-import { BasePage } from "./basePage";
-
 export class WatchPage {
   readonly watchContainers: Locator = this.page.locator(
     "//a[starts-with(@href,'/Apple-Cellular-Smartwatch')]"

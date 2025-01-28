@@ -1,5 +1,4 @@
-import { Locator,Page } from "playwright/test";
-import { BasePage } from "./basePage";
+import { Locator,Page } from "@playwright/test";
 
 export class ProductPage {
   readonly applestorelink: Locator = this.page.getByRole("link", {
