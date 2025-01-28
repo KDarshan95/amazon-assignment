@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=chromium --reporter=list",
     "tests:webkit": "playwright test --config=playwright.config.ts --project=webkit",
     "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
   },
@@ -16,4 +16,3 @@
     "@types/node": "^22.10.9"
   }
 }
- 
