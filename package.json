@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+    "jenkins-server":"java -jar jenkins.war --httpPort=8080 --enable-future-java"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

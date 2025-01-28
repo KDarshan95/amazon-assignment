@@ -5,12 +5,25 @@ const config: PlaywrightTestConfig = {
   timeout: 30 * 1000,
   use: {
     baseURL: "https://www.amazon.in",
-    headless: false,
+    headless: true,
     viewport: { width: 1366, height: 768 },
     screenshot: "on",
     trace: "on",
   },
-  reporter: [["html", { outputFolder: "reports", open: "never" }], ["list"]],
+  projects: [
+    {
+      name: "Chromium",
+      use: { browserName: "chromium" },
+    },
+    {
+      name: "Firefox",
+      use: { browserName: "firefox" },
+    },
+    {
+      name: "Webkit",
+      use: { browserName: "webkit" },
+    },
+  ],
 };
 
 export default config;
